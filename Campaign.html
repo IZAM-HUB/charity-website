@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Campaigns | Charity & Fundraising</title>
+
+
+
+    <link rel="stylesheet" href="css/styleCampaign.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="home page1.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Campaign.html">Campaigns</a>
+            <a href="Involved.html">Get Involved</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+    </nav>
+    
+    <div class="logo-container">
+        <div class="logo">
+            <img src="image/LOGO FUNRAUSER.jpg" alt="Charity Logo">
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="10" style="background-color: #0c78e4;">
+            <div class="campaign-title">~~ ACTIVE FUNDRAISER CAMPAIGN ~~</div>
+        </marquee>
+    </div>
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+    <div class="container">
+        <section class="campaigns">
+            <div class="main-campaign">
+                <img src="image/Feed-the-Hungry.jpg" alt="Main Campaign">
+                <h3>Food for the Hungry</h3>
+            </div>
+            <div class="campaign-list">
+                <div class="campaign">
+                    <img src="image/EDUCATION.jpg" alt="Campaign 2">
+                    <h3>Education for All</h3>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+                <div class="campaign">
+                    <img src="image/MEDICAL.png" alt="Campaign 3">
+                    <h3>Medical Aid Program</h3>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+                <div class="campaign">
+                    <img src="image/clean_water_initiative_HCI-LG-Clean Water Initiative-700x525.png" alt="Campaign 4">
+                    <h3>Clean Water Initiative</h3>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+                <div class="campaign">
+                    <img src="image/MY+Flood+Relief+Social+Media+Postings_KV.jpg" alt="Campaign 5">
+                    <h3>Disaster Relief</h3>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+                <div class="campaign">
+                    <img src="image/galeri-animal-malaysia-11.png" alt="Campaign 6">
+                    <h3>Animal Welfare</h3>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+                <div class="campaign">
+                    <img src="image/REFUGEES.jpg" alt="Campaign 7">
+                    <h3>Refugee Support</h3>
+                    <p>Helping displaced individuals find shelter and basic necessities.</p>
+                    <a href="Involved.html" class="donate-btn">GET INVOLVED</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        Copyright © 2025 All Right Reserved
+    </div>
+
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+    
+
+</body>
+</html>

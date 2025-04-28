@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header img.logo {
+    width: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-hero {
+    background: url('contact-bg.jpg') no-repeat center center/cover;
+    color: black; /* changed to black for better contrast */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+}

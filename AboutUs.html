@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Charity & Fundraising</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styleAboutUs.css">
+</head>
+<body>
+    <header>
+        <img src="image/LOGO FUNRAUSER.jpg" alt="Charity Logo" class="logo">
+        <h1>Charity & Fundraising</h1>
+        <nav>
+            <div class="menu-toggle">&#9776;</div> <!-- Hamburger Menu -->
+            <ul class="nav-links">
+                <li><a href="home page1.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Campaign.html">Campaigns</a></li>
+                <li><a href="Involved.html">Get Involved</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>About Us</h2>
+            <p>Learn more about our journey and mission to make the world better!</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section">
+            <h2>Our History</h2>
+            <p>Founded in 2024, our organization has been dedicated to making a positive impact in communities worldwide. What started as a small initiative has now grown into a global movement, helping countless individuals through various charitable campaigns.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>We envision a world where everyone has access to basic necessities, education, healthcare, and opportunities for a better future. Through our fundraising and charity programs, we strive to bring hope and support to those in need.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Goals</h2>
+            <ul>
+                <li>Provide food, clean water, and healthcare to underprivileged communities.</li>
+                <li>Support education and skill development programs for children and youth.</li>
+                <li>Offer emergency aid and disaster relief assistance.</li>
+                <li>Promote animal welfare and environmental sustainability.</li>
+                <li>Build a network of volunteers and donors committed to social change.</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="home page1.html" class="home-btn">Back to Home</a>
+
+    <footer>
+        <p>Email: ukk@psp.edu.my</p>
+        <p>Phone: 04-5383322</p>
+        <p>Address: Politeknik Seberang Perai, Jalan Permatang Pauh, 13500 Permatang Pauh, Pulau Pinang.</p>
+        <p>Copyright © 2025 All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dropdown Menu Script -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Show Menu when active */
+.show-menu {
+    display: flex !important;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('charity.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Container Section */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Style */
+.section {
+    margin-bottom: 40px;
+    background-color: #1976d2;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+}
+
+.section h2 {
+    color: #ffffff;
+}
+
+.section p, .section ul {
+    margin-top: 10px;
+}
+
+/* Home Button */
+.home-btn {
+    display: block;
+    width: 180px;
+    margin: 30px auto;
+    padding: 12px;
+    background: #1976d2;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.home-btn:hover {
+    background: #0d47a1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1565c0;
+    color: white;
+    margin-top: 40px;
+}
+

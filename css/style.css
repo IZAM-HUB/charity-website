@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0c78e4;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background: #0072ff;
+    border-radius: 5px;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('charity.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Slideshow */
+.slideshow {
+    background-color: #e0f2ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Fading Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Media Section */
+.media-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.center-image {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* About and Impact Sections */
+.about, .impact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 150px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #0c78e4;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    .nav-links.show-menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .slide img {
+        width: 90%;
+    }
+
+    .center-image {
+        width: 80%;
+    }
+}
